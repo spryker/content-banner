@@ -20,9 +20,6 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
  */
 class ContentBannerBusinessFactory extends AbstractBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\ContentBanner\Business\Model\ContentBannerValidatorInterface
-     */
     public function createContentBannerValidator(): ContentBannerValidatorInterface
     {
         return new ContentBannerValidator(
@@ -31,17 +28,11 @@ class ContentBannerBusinessFactory extends AbstractBusinessFactory
         );
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBanner\Dependency\External\ContentBannerToValidationAdapterInterface
-     */
     public function getValidatorAdapter(): ContentBannerToValidationAdapterInterface
     {
         return $this->getProvidedDependency(ContentBannerDependencyProvider::ADAPTER_VALIDATION);
     }
 
-    /**
-     * @return \Spryker\Zed\ContentBanner\Business\Model\ContentBannerConstraintsProviderInterface
-     */
     public function createContentBannerConstraintsProvider(): ContentBannerConstraintsProviderInterface
     {
         return new ContentBannerConstraintsProvider();

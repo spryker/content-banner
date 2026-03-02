@@ -9,8 +9,5 @@ namespace Spryker\Zed\ContentBanner\Business\Model;
 
 interface ContentBannerConstraintsProviderInterface
 {
-    /**
-     * @return array
-     */
     public function getConstraintsMap(): array;
 }

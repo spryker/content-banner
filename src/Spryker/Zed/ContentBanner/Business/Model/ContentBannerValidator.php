@@ -25,10 +25,6 @@ class ContentBannerValidator implements ContentBannerValidatorInterface
      */
     protected $constraintsProvider;
 
-    /**
-     * @param \Spryker\Zed\ContentBanner\Dependency\External\ContentBannerToValidationAdapterInterface $validationAdapter
-     * @param \Spryker\Zed\ContentBanner\Business\Model\ContentBannerConstraintsProviderInterface $constraintsProvider
-     */
     public function __construct(
         ContentBannerToValidationAdapterInterface $validationAdapter,
         ContentBannerConstraintsProviderInterface $constraintsProvider
@@ -37,11 +33,6 @@ class ContentBannerValidator implements ContentBannerValidatorInterface
         $this->constraintsProvider = $constraintsProvider;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ContentBannerTermTransfer $contentBannerTermTransfer
-     *
-     * @return \Generated\Shared\Transfer\ContentValidationResponseTransfer
-     */
     public function validateContentBannerTerm(ContentBannerTermTransfer $contentBannerTermTransfer): ContentValidationResponseTransfer
     {
         $isSuccess = true;

@@ -29,9 +29,6 @@ class ContentBannerFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testValidateContentBannerValidationSuccessful(): void
     {
         $contentBannerTermTransfer = (new ContentBannerTermTransfer())
@@ -45,9 +42,6 @@ class ContentBannerFacadeTest extends Unit
         $this->assertTrue($validationResult->getIsSuccess());
     }
 
-    /**
-     * @return void
-     */
     public function testValidateContentBannerWithLongTitleValidationFails(): void
     {
         $contentBannerTermTransfer = (new ContentBannerTermTransfer())
@@ -62,9 +56,6 @@ class ContentBannerFacadeTest extends Unit
         $this->assertFalse($validationResult->getIsSuccess());
     }
 
-    /**
-     * @return void
-     */
     public function testValidateContentBannerWithEmptySubtitleValidationFails(): void
     {
         $contentBannerTermTransfer = (new ContentBannerTermTransfer())
@@ -78,9 +69,6 @@ class ContentBannerFacadeTest extends Unit
         $this->assertFalse($validationResult->getIsSuccess());
     }
 
-    /**
-     * @return void
-     */
     public function testValidateContentBannerWithVeryLongSubtitleValidationFails(): void
     {
         $contentBannerTermTransfer = (new ContentBannerTermTransfer())

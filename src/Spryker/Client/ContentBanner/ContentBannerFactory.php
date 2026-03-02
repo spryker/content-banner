@@ -17,9 +17,6 @@ use Spryker\Shared\ContentBanner\ContentBannerConfig;
 
 class ContentBannerFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Client\ContentBanner\Mapper\ContentBannerTypeMapperInterface
-     */
     public function createContentBannerTypeMapper(): ContentBannerTypeMapperInterface
     {
         return new ContentBannerTypeMapper(
@@ -46,9 +43,6 @@ class ContentBannerFactory extends AbstractFactory
         return new BannerTermToBannerTypeExecutor();
     }
 
-    /**
-     * @return \Spryker\Client\ContentBanner\Dependency\Client\ContentBannerToContentStorageClientInterface
-     */
     public function getContentStorageClient(): ContentBannerToContentStorageClientInterface
     {
         return $this->getProvidedDependency(ContentBannerDependencyProvider::CLIENT_CONTENT_STORAGE);

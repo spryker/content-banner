@@ -13,9 +13,6 @@ use Symfony\Component\Validator\Constraints\NotBlank;
 
 class ContentBannerConstraintsProvider implements ContentBannerConstraintsProviderInterface
 {
-    /**
-     * @return array
-     */
     public function getConstraintsMap(): array
     {
         return [

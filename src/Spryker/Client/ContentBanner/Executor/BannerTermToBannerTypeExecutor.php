@@ -13,11 +13,6 @@ use Generated\Shared\Transfer\ContentTypeContextTransfer;
 
 class BannerTermToBannerTypeExecutor implements ContentBannerTermExecutorInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ContentTypeContextTransfer $contentTypeContextTransfer
-     *
-     * @return \Generated\Shared\Transfer\ContentBannerTypeTransfer
-     */
     public function execute(ContentTypeContextTransfer $contentTypeContextTransfer): ContentBannerTypeTransfer
     {
         $bannerTermTransfer = $this->mapContentTypeParametersToTransfer($contentTypeContextTransfer);
@@ -25,11 +20,6 @@ class BannerTermToBannerTypeExecutor implements ContentBannerTermExecutorInterfa
         return (new ContentBannerTypeTransfer())->fromArray($bannerTermTransfer->modifiedToArray(), true);
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ContentTypeContextTransfer $contentTypeContextTransfer
-     *
-     * @return \Generated\Shared\Transfer\ContentBannerTermTransfer
-     */
     protected function mapContentTypeParametersToTransfer(ContentTypeContextTransfer $contentTypeContextTransfer): ContentBannerTermTransfer
     {
         return (new ContentBannerTermTransfer())->fromArray($contentTypeContextTransfer->getParameters(), true);

@@ -12,10 +12,5 @@ use Generated\Shared\Transfer\ContentTypeContextTransfer;
 
 interface ContentBannerTermExecutorInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\ContentTypeContextTransfer $contentTypeContextTransfer
-     *
-     * @return \Generated\Shared\Transfer\ContentBannerTypeTransfer
-     */
     public function execute(ContentTypeContextTransfer $contentTypeContextTransfer): ContentBannerTypeTransfer;
 }
