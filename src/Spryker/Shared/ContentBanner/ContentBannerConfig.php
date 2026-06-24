@@ -12,6 +12,8 @@ use Spryker\Shared\Kernel\AbstractSharedConfig;
 class ContentBannerConfig extends AbstractSharedConfig
 {
     /**
+     * @api
+     *
      * Content item banner
      *
      * @var string
@@ -19,6 +21,8 @@ class ContentBannerConfig extends AbstractSharedConfig
     public const CONTENT_TYPE_BANNER = 'Banner';
 
     /**
+     * @api
+     *
      * Content item banner
      *
      * @var string
@@ -26,6 +30,8 @@ class ContentBannerConfig extends AbstractSharedConfig
     public const CONTENT_TERM_BANNER = 'Banner';
 
     /**
+     * @api
+     *
      * Content item banner function name
      *
      * @var string
@@ -33,6 +39,8 @@ class ContentBannerConfig extends AbstractSharedConfig
     public const TWIG_FUNCTION_NAME = 'content_banner';
 
     /**
+     * @api
+     *
      * @deprecated Use {@link \Spryker\Shared\ContentBanner\ContentBannerConfig::WIDGET_TEMPLATE_IDENTIFIER_BOTTOM_TITLE} instead.
      *
      * @var string
@@ -40,6 +48,8 @@ class ContentBannerConfig extends AbstractSharedConfig
     public const WIDGET_TEMPLATE_IDENTIFIER_DEFAULT = 'default';
 
     /**
+     * @api
+     *
      * Content item banner bottom-title template identifier
      *
      * @var string
@@ -47,6 +57,8 @@ class ContentBannerConfig extends AbstractSharedConfig
     public const WIDGET_TEMPLATE_IDENTIFIER_BOTTOM_TITLE = 'bottom-title';
 
     /**
+     * @api
+     *
      * Content item banner top-title template identifier
      *
      * @var string
